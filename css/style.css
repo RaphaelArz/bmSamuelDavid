@@ -175,7 +175,7 @@ body {
 /* Appliquer l'image de fond */
 #overlay {
   background-image: url("/img/seferTorah.jpeg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: fixed;
