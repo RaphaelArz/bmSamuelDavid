@@ -8,7 +8,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
   sendingMessage.style.top = '50%';
   sendingMessage.style.left = '50%';
   sendingMessage.style.transform = 'translate(-50%, -50%)';
-  sendingMessage.style.backgroundColor = '#efb2c1';
+  sendingMessage.style.backgroundColor = '#0d1b5a';
   sendingMessage.style.color = '#ffffff';
   sendingMessage.style.padding = '30px'; // Plus grand
   sendingMessage.style.fontSize = '24px'; // Texte plus grand
@@ -34,7 +34,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
   })
     .then(response => {
       sendingMessage.textContent = '✅ Envoyé avec succès !';
-      sendingMessage.style.backgroundColor = '#efb2c1';
+      sendingMessage.style.backgroundColor = '#0d1b5a';
       sendingMessage.style.border = '4px solid #ffffff';
 
       // Désactiver tous les champs du formulaire
@@ -48,7 +48,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
     .catch(error => {
       console.error('Erreur:', error);
       sendingMessage.textContent = '❌ Erreur lors de l\'envoi du formulaire.';
-      sendingMessage.style.backgroundColor = '#efb2c1';
+      sendingMessage.style.backgroundColor = '##0d1b5a';
       sendingMessage.style.border = '4px solid #ffffff';
 
       setTimeout(function() {
