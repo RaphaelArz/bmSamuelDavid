@@ -8,25 +8,30 @@
 </head>
 <body>
 
+
+
 <div id="overlay">
-  <a class="button" onclick="hideOverlay(); playMusic()">
-    <i class="fas fa-arrow-right"></i>
-    Voir l'invitation
-  </a>
+
+
+
+
+    <a class="button" onclick="hideOverlay(); playMusic()">
+      <i class="fas fa-arrow-right"></i>
+      Voir l'invitation
+    </a>
+
 </div>
 
 <section class="image-section">
-  <!-- Cette section est vide, l'image est maintenant en arrière-plan -->
+  <img src="img/samuelPic.jpg" alt="Samuel">
 </section>
 
 <hr>
-
 <section class="image-section">
-  <!-- L'image de tephilline est maintenant en arrière-plan -->
+  <img src="img/tephilineCut.jpg" alt="Tephiline">
 </section>
 
 <hr>
-
 <div id="saveTheDate">
   <a class="textSaveTheDate"><b>Save The Date</b></a>
   <a class="textSaveTheDate" style="font-size: 4.5vw; font-family:'DMSerif' , sans-serif ">4 Juillet 2025</a>
@@ -54,13 +59,78 @@
     </div>
   </div>
 </div>
-
 <hr>
-
-<section class="image-section" style="  background-image: url('img/tephilineCut.jpg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Image + dégradé sombre */
-">
-  <!-- L'image de Chabbat est maintenant en arrière-plan -->
+<section class="image-section">
+  <img src="img/chabbatCompletCut.jpg" alt="Chabbat Complet">
 </section>
+
+<section class="rsvp-section">
+  <div class="rsvp-container">
+    <h1>Confirmation de présence</h1>
+    <form id="rsvp-form" method="post">
+
+      <!-- Participation aux événements + Infos personnelles -->
+      <fieldset class="rsvp-fieldset">
+        <legend class="rsvp-legend">Participation aux événements</legend>
+
+        <!-- Nom & Prénom -->
+        <div class="rsvp-input-group">
+          <div class="rsvp-input">
+            <label class="rsvp-label" for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" class="rsvp-text" required>
+          </div>
+          <div class="rsvp-input">
+            <label class="rsvp-label" for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" class="rsvp-text" required>
+          </div>
+        </div>
+
+        <!-- Événements -->
+        <div class="rsvp-event">
+          <label class="rsvp-label">Présent à la mairie :</label>
+          <label class="radio-label"><input type="radio" name="mairie" value="oui" class="rsvp-radio presence-oui"
+                                            required> Oui</label>
+          <label class="radio-label"><input type="radio" name="mairie" value="non" class="rsvp-radio"> Non</label>
+          <input type="number" name="nb-mairie" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+        </div>
+
+        <div class="rsvp-event">
+          <label class="rsvp-label">Présent au henné :</label>
+          <label class="radio-label"><input type="radio" name="henne" value="oui" class="rsvp-radio presence-oui"
+                                            required> Oui</label>
+          <label class="radio-label"><input type="radio" name="henne" value="non" class="rsvp-radio"> Non</label>
+          <input type="number" name="nb-henne" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+        </div>
+
+        <div class="rsvp-event">
+          <label class="rsvp-label">Présent à la réception :</label>
+          <label class="radio-label"><input type="radio" name="reception" value="oui" class="rsvp-radio presence-oui"
+                                            required> Oui</label>
+          <label class="radio-label"><input type="radio" name="reception" value="non" class="rsvp-radio"> Non</label>
+          <input type="number" name="nb-reception" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+        </div>
+
+        <div class="rsvp-event">
+          <label class="rsvp-label">Présent au Chabbat :</label>
+          <label class="radio-label"><input type="radio" name="chabbat" value="oui" class="rsvp-radio presence-oui"
+                                            required> Oui</label>
+          <label class="radio-label"><input type="radio" name="chabbat" value="non" class="rsvp-radio"> Non</label>
+          <input type="number" name="nb-chabbat" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+        </div>
+
+        <!-- Champ Message aux mariés -->
+        <div class="rsvp-message-box">
+          <label class="rsvp-label" for="message">Message aux mariés :</label>
+          <textarea id="message" name="message" class="rsvp-message" placeholder="Mazal Tov !!" rows="4"></textarea>
+        </div>
+
+      </fieldset>
+
+      <button type="submit" class="button">Envoyer</button>
+    </form>
+  </div>
+</section>
+
 
 <script src="js/hideOverlay.js"></script>
 <script src="js/countDown.js"></script>

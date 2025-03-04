@@ -17,74 +17,27 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-
-  background-size: auto;
-  background-position: center;
 }
 
-.image-section:nth-child(2) {
-  background-image: url('img/tephilineCut.jpg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Image + dégradé sombre */
+.image-section img {
+  width: 100vw;
+  height: auto;
+  display: block;
 }
 
-.image-section:nth-child(4) {
-  background-image: url('img/chabbatCompletCut.jpg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Image + dégradé sombre */
-}
 
-#overlay {
-  background-image: url("/img/samuelPic.jpg");
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #fffaf4;
+body {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  opacity: 1;
-  transition: opacity 0.5s;
-  z-index: 2000;
-  padding: 30px 0;
+  margin: 0;
 }
 
-#overlay.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
-/* Style des boutons */
-.button {
-  background-color: #1a237e;
-  color: white;
-  font-size: 1.2rem;
-  font-family: "DMSerif", sans-serif;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.button:hover {
-  background-color: #0d1b5a;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
-}
-
-.button i {
-  font-size: 1.5rem;
+@font-face {
+  font-family: 'DMSerif';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
 #saveTheDate {
@@ -118,6 +71,10 @@ body {
   font-family: "DMSerif", sans-serif;
 }
 
+#saveTheDate{
+
+}
+
 .textSaveTheDate {
   font-family: "Great Vibes", sans-serif;
   color: #ffffff;
@@ -146,27 +103,26 @@ body {
   width: 40vw;
 }
 
+
+
 @font-face {
   font-family: 'Berlin Sans FB';
   font-style: normal;
   font-weight: normal;
   src:  url('/police/BRLNSR.woff') format('woff');
 }
-
 @font-face {
   font-family: 'Membra';
   font-style: normal;
   font-weight: normal;
   src:  url('/police/membra.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Brush Script MT';
   font-style: normal;
   font-weight: normal;
   src:  url('/police/BRUSHSCI.TTF') format('truetype');
 }
-
 @font-face {
   font-family: 'Great Vibes';
   font-style: normal;
@@ -180,10 +136,240 @@ body {
   font-weight: normal;
   src:  url('/police/TORAH.TTF') format('truetype');
 }
-
 @font-face {
   font-family: 'DMSerif';
   font-style: normal;
   font-weight: bold;
   src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
 }
+
+
+#overlay {
+  background-image: url("/img/samuelPic.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fffaf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Place les éléments en haut et en bas */
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 2000;
+  padding: 30px 0;
+}
+
+#overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+/* Appliquer l'image de fond */
+#overlay {
+  background-image: url("/img/seferTorah.jpeg"), /* Ton image de fond */
+  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Dégradé transparent sombre */
+;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 2000;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Bouton bleu roi */
+.button {
+  background-color: #1a237e; /* Bleu roi */
+  color: white;
+  font-size: 1.2rem;
+  font-family: "DMSerif", sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Effet dré */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button:hover {
+  background-color: #0d1b5a;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+/* Icône dans le bouton */
+.button i {
+  font-size: 1.5rem;
+}
+
+
+.bouton:hover {
+  background-color: #0d1b5a;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+
+.nomInvite {
+  font-style: oblique;
+  color: #ffffff;
+  font-family: Cormorant, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black,
+  0px 0px 10px black,
+  0px 0px 15px black;
+}
+
+
+/* Importation de la police */
+
+/* Section RSVP */
+.rsvp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 15px 0 15px;
+  background-image: url('/img/background.jpg');
+  background-size: contain;
+}
+
+/* Conteneur du formulaire */
+.rsvp-container {
+  padding: 40px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Titre */
+.rsvp-title {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: 'Cormorant', serif;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Légende */
+.rsvp-legend {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Bloc d'événement */
+.rsvp-event {
+
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Labels */
+.rsvp-label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+/* Boutons radio */
+.rsvp-radio {
+  margin-right: 5px;
+
+}
+
+/* Champs numériques */
+.rsvp-number {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  background: white;
+}
+/* Chaque bouton radio et son texte sur une ligne */
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacement entre le bouton et le texte */
+  margin-bottom: 5px;
+}
+
+/* Ajuster la taille des radios */
+.rsvp-radio {
+  transform: scale(1.2); /* Agrandir légèrement pour une meilleure visibilité */
+}
+
+
+/* Champ message aux mariés */
+.rsvp-message-box {
+  margin-top: 20px;
+}
+
+/* Champs Nom & Prénom */
+/* Champs Nom & Prénom */
+.rsvp-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.rsvp-input {
+  text-align: left;
+}
+
+.rsvp-text {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Champ message aux mariés */
+.rsvp-message-box {
+  margin-top: 20px;
+}
+
+.rsvp-message {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: none;
+}
+
+
