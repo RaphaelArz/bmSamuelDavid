@@ -64,7 +64,7 @@
   <img src="img/chabbatCompletCut.jpg" alt="Chabbat Complet">
 </section>
 
-<section class="rsvp-section">
+<<section class="rsvp-section">
   <div class="rsvp-container">
     <h1>Confirmation de présence</h1>
     <form id="rsvp-form" method="post">
@@ -87,27 +87,11 @@
 
         <!-- Événements -->
         <div class="rsvp-event">
-          <label class="rsvp-label">Présent à la mairie :</label>
-          <label class="radio-label"><input type="radio" name="mairie" value="oui" class="rsvp-radio presence-oui"
+          <label class="rsvp-label">Présent aux Téphilines :</label>
+          <label class="radio-label"><input type="radio" name="tephilin" value="oui" class="rsvp-radio presence-oui"
                                             required> Oui</label>
-          <label class="radio-label"><input type="radio" name="mairie" value="non" class="rsvp-radio"> Non</label>
-          <input type="number" name="nb-mairie" class="rsvp-number" placeholder="Nombre de personnes" disabled>
-        </div>
-
-        <div class="rsvp-event">
-          <label class="rsvp-label">Présent au henné :</label>
-          <label class="radio-label"><input type="radio" name="henne" value="oui" class="rsvp-radio presence-oui"
-                                            required> Oui</label>
-          <label class="radio-label"><input type="radio" name="henne" value="non" class="rsvp-radio"> Non</label>
-          <input type="number" name="nb-henne" class="rsvp-number" placeholder="Nombre de personnes" disabled>
-        </div>
-
-        <div class="rsvp-event">
-          <label class="rsvp-label">Présent à la réception :</label>
-          <label class="radio-label"><input type="radio" name="reception" value="oui" class="rsvp-radio presence-oui"
-                                            required> Oui</label>
-          <label class="radio-label"><input type="radio" name="reception" value="non" class="rsvp-radio"> Non</label>
-          <input type="number" name="nb-reception" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+          <label class="radio-label"><input type="radio" name="tephilin" value="non" class="rsvp-radio"> Non</label>
+          <input type="number" name="nb-tephilin" class="rsvp-number" placeholder="Nombre de personnes" disabled>
         </div>
 
         <div class="rsvp-event">
@@ -120,8 +104,8 @@
 
         <!-- Champ Message aux mariés -->
         <div class="rsvp-message-box">
-          <label class="rsvp-label" for="message">Message aux mariés :</label>
-          <textarea id="message" name="message" class="rsvp-message" placeholder="Mazal Tov !!" rows="4"></textarea>
+          <label class="rsvp-label" for="message">Message à Samuel :</label>
+          <textarea id="message" name="message" class="rsvp-message" placeholder="Mazal Tov Samuel !!" rows="4"></textarea>
         </div>
 
       </fieldset>
@@ -130,6 +114,7 @@
     </form>
   </div>
 </section>
+
 
 <audio id="myAudio" src="/music/BirkatHacohnim.mp3"></audio>
 
