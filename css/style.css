@@ -6,6 +6,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -23,4 +24,122 @@ body {
   width: 100vw;
   height: auto;
   display: block;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'DMSerif';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+#saveTheDate {
+  padding-top: 5vw;
+  background-color: #052358;
+  background-image: linear-gradient(160deg, #4b6d92 0%, #25457b 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#decompte {
+  justify-content: center;
+  margin-bottom: 5vw;
+}
+
+.separation {
+  display: flex;
+}
+
+.countdown-item {
+  margin: 0vw 15vw 0 15vw;
+  height: 15vw;
+  color: #ffffff;
+  font-size: 15vw;
+  text-align: center;
+  line-height: 25vw;
+  border-radius: 10px;
+  font-family: "DMSerif", sans-serif;
+}
+
+#saveTheDate{
+
+}
+
+.textSaveTheDate {
+  font-family: "Great Vibes", sans-serif;
+  color: #ffffff;
+  font-size: 10vw;
+  margin-bottom: 2vw;
+}
+
+.element {
+  margin-top: 2vw;
+  width: 15vw;
+  height: 15vw;
+  color: #ffffff;
+  font-size: 3.2vw;
+  text-align: center;
+  line-height: 15vw;
+  border-radius: 10px;
+  font-family: "DMSerif";
+}
+
+.temps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40vw;
+}
+
+
+
+@font-face {
+  font-family: 'Berlin Sans FB';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/BRLNSR.woff') format('woff');
+}
+@font-face {
+  font-family: 'Membra';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/membra.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Brush Script MT';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/BRUSHSCI.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/GreatVibes-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'torah sofer';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/TORAH.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'DMSerif';
+  font-style: normal;
+  font-weight: bold;
+  src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
 }

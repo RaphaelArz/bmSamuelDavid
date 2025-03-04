@@ -4,14 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Affichage des Images</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
 <section class="image-section">
   <img src="img/tephiline.jpg" alt="Tephiline">
+</section>
+
+<hr>
+<div id="saveTheDate">
+  <a class="textSaveTheDate"><b>Save The Date</b></a>
+  <a class="textSaveTheDate" style="font-size: 4.5vw; font-family:'DMSerif' , sans-serif ">4 Juillet 2025</a>
+
+  <div id="decompte">
+    <div class="separation">
+      <div class="temps">
+        <a class="countdown-item" id="jour">0</a>
+        <div class="element">Jours</div>
+      </div>
+      <div class="temps">
+        <a class="countdown-item" id="heure">0</a>
+        <div class="element">Heures</div>
+      </div>
+    </div>
+    <div class="separation">
+      <div class="temps">
+        <a class="countdown-item" id="minute">0</a>
+        <div class="element">Minutes</div>
+      </div>
+      <div class="temps">
+        <a class="countdown-item" id="seconde">0</a>
+        <div class="element">Secondes</div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<section class="image-section">
   <img src="img/chabbatComplet.jpg" alt="Chabbat Complet">
 </section>
+
+
+
+
+<script src="js/hideOverlay.js"></script>
+<script src="js/countDown.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/apparitionImage.js"></script>
+<script src="js/apparitionTexte.js"></script>
+<script src="js/music.js"></script>
+<script src="js/nomUrl.js"></script>
+<script src="js/nbPrsnRequire.js"></script>
+<script src="js/sheet.js"></script>
+<script src="js/downloadRecap.js"></script>
 
 </body>
 </html>
