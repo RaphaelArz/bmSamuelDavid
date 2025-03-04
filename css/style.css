@@ -17,27 +17,75 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-.image-section img {
   width: 100vw;
-  height: auto;
-  display: block;
+  height: 100vh; /* S'assure que chaque section prend tout l'écran */
+  background-size: cover;
+  background-position: center;
 }
 
+.image-section:nth-child(2) {
+  background-image: url('img/tephilineCut.jpg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Image + dégradé sombre */
+}
 
-body {
+.image-section:nth-child(4) {
+  background-image: url('img/chabbatCompletCut.jpg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Image + dégradé sombre */
+}
+
+#overlay {
+  background-image: url("/img/samuelPic.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fffaf4;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 2000;
+  padding: 30px 0;
 }
 
-@font-face {
-  font-family: 'DMSerif';
-  font-style: normal;
-  font-weight: bold;
-  src: url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
+#overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Style des boutons */
+.button {
+  background-color: #1a237e;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "DMSerif", sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button:hover {
+  background-color: #0d1b5a;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.button i {
+  font-size: 1.5rem;
 }
 
 #saveTheDate {
@@ -71,10 +119,6 @@ body {
   font-family: "DMSerif", sans-serif;
 }
 
-#saveTheDate{
-
-}
-
 .textSaveTheDate {
   font-family: "Great Vibes", sans-serif;
   color: #ffffff;
@@ -103,26 +147,27 @@ body {
   width: 40vw;
 }
 
-
-
 @font-face {
   font-family: 'Berlin Sans FB';
   font-style: normal;
   font-weight: normal;
   src:  url('/police/BRLNSR.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Membra';
   font-style: normal;
   font-weight: normal;
   src:  url('/police/membra.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Brush Script MT';
   font-style: normal;
   font-weight: normal;
   src:  url('/police/BRUSHSCI.TTF') format('truetype');
 }
+
 @font-face {
   font-family: 'Great Vibes';
   font-style: normal;
@@ -136,98 +181,10 @@ body {
   font-weight: normal;
   src:  url('/police/TORAH.TTF') format('truetype');
 }
+
 @font-face {
   font-family: 'DMSerif';
   font-style: normal;
   font-weight: bold;
   src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
-}
-
-
-#overlay {
-  background-image: url("/img/samuelPic.jpg");
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #fffaf4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Place les éléments en haut et en bas */
-  align-items: center;
-  opacity: 1;
-  transition: opacity 0.5s;
-  z-index: 2000;
-  padding: 30px 0;
-}
-
-#overlay.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-/* Appliquer l'image de fond */
-#overlay {
-  background-image: url("/img/seferTorah.jpeg"), /* Ton image de fond */
-  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Dégradé transparent sombre */
-;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 1;
-  transition: opacity 0.5s;
-  z-index: 2000;
-  padding: 30px;
-  text-align: center;
-}
-
-/* Bouton bleu roi */
-.button {
-  background-color: #1a237e; /* Bleu roi */
-  color: white;
-  font-size: 1.2rem;
-  font-family: "DMSerif", sans-serif;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Effet dré */
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.button:hover {
-  background-color: #0d1b5a;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
-}
-
-/* Icône dans le bouton */
-.button i {
-  font-size: 1.5rem;
-}
-
-
-.bouton:hover {
-  background-color: #0d1b5a;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
 }
