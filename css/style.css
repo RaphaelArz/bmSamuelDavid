@@ -368,3 +368,19 @@ body {
 }
 
 
+#premierPartie {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(  rgba(26, 26, 26, 0.63), rgba(21, 21, 21, 0.36)), url("/img/seferTorahOuvert.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+
+
+  line-height: 0; /* Réduit l'interligne */
+}
+
