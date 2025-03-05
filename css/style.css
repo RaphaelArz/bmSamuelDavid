@@ -143,6 +143,12 @@ body {
   src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'pinyon';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/PinyonScript.ttf') format('truetype');
+}
 
 #overlay {
   background-image: url("/img/samuelPic.jpg");
