@@ -10,6 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-image: url('/img/background.jpg');
+  background-size: cover;
 }
 
 .image-section {
