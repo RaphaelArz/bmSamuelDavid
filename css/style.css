@@ -180,8 +180,8 @@ body {
 }
 /* Appliquer l'image de fond */
 #overlay {
-  background-image: url("/img/seferTorah.jpg"), /* Ton image de fond */
-  linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)); /* Dégradé transparent sombre */
+  background-image:linear-gradient( rgba(26, 26, 26, 0.6), rgba(21, 21, 21, 0.51)), url("/img/seferTorah.jpg");
+
 ;
   background-size: cover;
   background-position: center;
