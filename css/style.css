@@ -159,7 +159,6 @@ body {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: #fffaf4;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Place les éléments en haut et en bas */
@@ -182,7 +181,7 @@ body {
 /* Appliquer l'image de fond */
 #overlay {
   background-image: url("/img/seferTorah.jpg"), /* Ton image de fond */
-  linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.86)); /* Dégradé transparent sombre */
+  linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)); /* Dégradé transparent sombre */
 ;
   background-size: cover;
   background-position: center;
