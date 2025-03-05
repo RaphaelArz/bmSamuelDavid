@@ -259,7 +259,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding: 0 15px 0 15px;
   background-image: url('/img/background.jpg');
   background-size: cover;
 }
