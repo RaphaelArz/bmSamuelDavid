@@ -180,7 +180,7 @@ body {
 }
 /* Appliquer l'image de fond */
 #overlay {
-  background-image:linear-gradient( rgba(26, 26, 26, 0.6), rgba(21, 21, 21, 0.51)), url("/img/seferTorah.jpg");
+  background-image:linear-gradient( rgba(26, 26, 26, 0.6), rgba(21, 21, 21, 0.15)), url("/img/seferTorah.jpg");
 
 ;
   background-size: cover;
