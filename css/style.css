@@ -261,7 +261,7 @@ body {
 
   padding: 0 15px 0 15px;
   background-image: url('/img/background.jpg');
-  background-size: contain;
+  background-size: cover;
 }
 
 /* Conteneur du formulaire */
