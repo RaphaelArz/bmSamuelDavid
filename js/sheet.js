@@ -24,7 +24,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
   var data = {};
   formData.forEach((value, key) => data[key] = value);
 
-  fetch('https://script.google.com/macros/s/AKfycbwyPY1mYesB-MfSl1thdsb1wPRWSG90t4l3oK0MXzoWf3ycG0dh7wrrfzV0Z4CR6Qd_/exec', { // Remplacez par l'URL de déploiement du script Google Apps
+  fetch('https://script.google.com/macros/s/AKfycbzS8czwcVOt10kdwgIx1ifNQwIboZLlKHcBK-L3UBAS7wkV1gkx0fCvS1yeUWfN4J6e/exec', { // Remplacez par l'URL de déploiement du script Google Apps
     method: 'POST',
     mode: 'no-cors',
     headers: {
