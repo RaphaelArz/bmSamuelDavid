@@ -68,45 +68,50 @@
 
 <section class="rsvp-section">
   <div class="rsvp-container">
-    <h1 style="font-family: 'pinyon',sans-serif; font-size: 50px; color:#c48e1b ">Réponse</h1>
+    <h1 style="font-family: 'pinyon', sans-serif; font-size: 50px; color: #c48e1b;">Réponse</h1>
     <form id="rsvp-form" method="post">
 
-
-        <!-- Nom & Prénom -->
-        <div class="rsvp-input-group">
-          <div class="rsvp-input">
-            <label class="rsvp-label" for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" class="rsvp-text" required>
-          </div>
-          <div class="rsvp-input">
-            <label class="rsvp-label" for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" class="rsvp-text" required>
-          </div>
+      <!-- Nom & Prénom -->
+      <div class="rsvp-input-group">
+        <div class="rsvp-input">
+          <label class="rsvp-label" for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" class="rsvp-text" required>
         </div>
-
-        <!-- Événements -->
-        <div class="rsvp-event">
-          <label class="rsvp-label">Présent aux Téphilines :</label>
-          <label class="radio-label"><input type="radio" name="tephilin" value="oui" class="rsvp-radio presence-oui"
-                                            required> Oui</label>
-          <label class="radio-label"><input type="radio" name="tephilin" value="non" class="rsvp-radio"> Non</label>
-          <input type="number" name="nb-tephilin" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+        <div class="rsvp-input">
+          <label class="rsvp-label" for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" class="rsvp-text" required>
         </div>
+      </div>
 
-        <div class="rsvp-event">
-          <label class="rsvp-label">Présent au Chabbat :</label>
-          <label class="radio-label"><input type="radio" name="chabbat" value="oui" class="rsvp-radio presence-oui"
-                                            required> Oui</label>
-          <label class="radio-label"><input type="radio" name="chabbat" value="non" class="rsvp-radio"> Non</label>
-          <input type="number" name="nb-chabbat" class="rsvp-number" placeholder="Nombre de personnes" disabled>
-        </div>
+      <!-- Téphilines -->
+      <div class="rsvp-event">
+        <label class="rsvp-label">Présent aux Téphilines :</label>
+        <label class="radio-label"><input type="radio" name="tephilin" value="oui" class="rsvp-radio presence-oui" required> Oui</label>
+        <label class="radio-label"><input type="radio" name="tephilin" value="non" class="rsvp-radio"> Non</label>
+        <input type="number" name="nb-tephilin" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+      </div>
 
-        <!-- Champ Message aux mariés -->
-        <div class="rsvp-message-box">
-          <label class="rsvp-label" for="message">Message à Samuel :</label>
-          <textarea id="message" name="message" class="rsvp-message" placeholder="Mazal Tov Samuel !!" rows="4"></textarea>
-        </div>
+      <!-- Vendredi soir -->
+      <div class="rsvp-event">
+        <label class="rsvp-label">Présent vendredi soir :</label>
+        <label class="radio-label"><input type="radio" name="vendredi_soir" value="oui" class="rsvp-radio presence-oui" required> Oui</label>
+        <label class="radio-label"><input type="radio" name="vendredi_soir" value="non" class="rsvp-radio"> Non</label>
+        <input type="number" name="nb-vendredi" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+      </div>
 
+      <!-- Samedi -->
+      <div class="rsvp-event">
+        <label class="rsvp-label">Présent samedi :</label>
+        <label class="radio-label"><input type="radio" name="samedi" value="oui" class="rsvp-radio presence-oui" required> Oui</label>
+        <label class="radio-label"><input type="radio" name="samedi" value="non" class="rsvp-radio"> Non</label>
+        <input type="number" name="nb-samedi" class="rsvp-number" placeholder="Nombre de personnes" disabled>
+      </div>
+
+      <!-- Champ Message aux mariés -->
+      <div class="rsvp-message-box">
+        <label class="rsvp-label" for="message">Message à Samuel :</label>
+        <textarea id="message" name="message" class="rsvp-message" placeholder="Mazal Tov Samuel !!" rows="4"></textarea>
+      </div>
 
       <button type="submit" class="button">Envoyer</button>
     </form>
