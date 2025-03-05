@@ -383,3 +383,10 @@ body {
 
 }
 
+hr{
+  border: none;
+  height: 3px;
+  background-color: rgb(178, 144, 90);
+  color: rgb(178, 144, 90);
+
+}
