@@ -239,16 +239,6 @@ body {
 }
 
 
-.nomInvite {
-  font-style: oblique;
-  color: #ffffff;
-  font-family: Cormorant, sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-shadow: 0px 0px 5px black,
-  0px 0px 10px black,
-  0px 0px 15px black;
-}
 
 
 /* Importation de la police */
