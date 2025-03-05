@@ -1,6 +1,6 @@
 function playMusic() {
   const audio = document.getElementById("myAudio");
-  audio.currentTime = 1
+  audio.currentTime = 121
   audio.play();
 }
 
