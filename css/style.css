@@ -379,8 +379,7 @@ body {
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   flex-direction: column; /* Arrange les éléments en colonne */
+  text-align: center;
 
-
-  line-height: 0; /* Réduit l'interligne */
 }
 
